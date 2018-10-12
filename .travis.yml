@@ -19,6 +19,7 @@ before_script:
   - chmod +x gradlew      #Grant permissions
   - android list targets
   - emulator -avd test -no-skin -no-audio -no-window &    #Start emulator
+  - echo no | android create avd --force --name test --target $ANDROID_TARGET --abi $ANDROID_ABI    #Create AVD for given api
 
 script:
   - echo "Travis branch is $TRAVIS_BRANCH"    #Print out which branch it is.
