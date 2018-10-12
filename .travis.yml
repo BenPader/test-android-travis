@@ -1,15 +1,14 @@
 language: android
 env:
   matrix:
-    - ANDROID_TARGET=android-19 ANDROID_ABI=armeabi-v7a
-    - ANDROID_TARGET=android-21 ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-27 ANDROID_ABI=armeabi-v7a
 android:
   update_sdk: true  #Check for the updates each time you run the build.
   components:
       - platform-tools
       - tools
-      - build-tools-25.0.0    #Build tool version
-      - android-25            #targate api version
+      - build-tools-27.0.0    #Build tool version
+      - android-27            #targate api version
 
       # Additional components
       - extra-google-google_play_services
